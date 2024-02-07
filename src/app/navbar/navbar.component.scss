@@ -1,0 +1,175 @@
+:root {
+    --color-primary: #993399;
+    --color-secondary: #66cc66;
+    --color-alternate: #ffcc66;
+    --color-accent: #000000
+}
+
+#header {
+    width: 100%;
+    background: #993399;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    height: 130px;
+}
+
+.navbar {
+    width: 90%;
+    box-shadow: none;
+    padding-right: 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+}
+
+.navbar li.book-us {
+    position: absolute;
+    right: 0;
+}
+
+.navbar li a {
+    font-size: 21px;
+    font-weight: 700;   
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar li a:hover {
+    color: #ffcc66;
+}
+
+.navbar li a:active {
+    text-decoration: underline;
+}
+
+.navbar li a.btn {
+    background: #66cc66;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+}
+
+.logo {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 70%;
+}
+
+.mobile-nav {
+    width: 3%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav span {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background: #ffffff;
+    margin: 6px 0;
+    transition: all .3s ease;
+}
+
+@media screen and (max-width: 786px) {
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 130px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        padding: 1rem 0;
+        height: auto;
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar ul {
+        flex-flow: column;
+        padding: 10px;
+    }
+
+    .navbar ul li {
+        padding: 10px;
+        width: 100%;
+        border-radius: 4px;
+        transition: all .3s ease;
+    }
+
+    .navbar ul li.active {
+        background: #d1394883;
+    }
+
+    .navbar ul li:hover {
+        background: #d1394883;
+    }
+
+    .navbar ul li a {
+        display: block;
+        color: #000000;
+    }
+
+    .navbar ul li a:hover {
+        color: #d13948;
+    }
+
+    .navbar ul li:hover a {
+        color: #fff;
+    }
+
+    .navbar ul li.active a {
+        color: #fff;
+    }
+
+    .navbar ul .book-us {
+        position: relative !important;
+        background: none !important;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .logo img {
+        width: 90%;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+        transition: all .3s ease;
+    }
+
+    .mobile-nav:hover {
+        border-color: #fff;
+    }
+
+    .top-transform {
+        transform: rotate(-30deg) translateY(5px) translateX(-5px);
+    }
+
+    .middle-transform {
+        transform: rotate(30deg) translateY(-5px) translateX(-6px);
+    }
+}

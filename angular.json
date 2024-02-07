@@ -37,9 +37,19 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/vendor/aos/aos.css",
+              "src/assets/vendor/boxicons/css/boxicons.min.css",
+              "src/assets/vendor/boxicons/css/animations.css",
+              "src/assets/vendor/bootstrap/css/bootstrap.min.css",
+              "src/assets/vendor/MD5-Bootstrap/css/mdb.min.css",
+              "src/assets/vendor/swiper/swiper-bundle.min.css",
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/vendor/bootstrap/js/bootstrap.bundle.min.js",
+              "src/assets/vendor/purecounter/purecounter_vanilla.js",
+              "src/assets/vendor/swiper/swiper-bundle.min.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {

@@ -1,0 +1,25 @@
+<header id="header">
+
+    <div class="container-fluid d-flex justify-content-between align-items-center h-100">
+        <div class="logo">
+            <img src="../assets/img/logo.png" alt="AE_Elegant_Hostess Logo" width="200">
+        </div>
+    
+        <nav class="navbar" [ngStyle]="{'display': isClicked ? 'flex' : ''}">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+                <li class="book-us"><a class="btn">Book us</a></li>
+            </ul>
+        </nav>
+    
+        <div class="mobile-nav" (click)="toggleNavbar()">
+            <span [ngClass]="{'top-transform' : isClicked}"></span>
+            <span [ngClass]="{'middle-transform' : isClicked}"></span>
+        </div>
+    </div>
+
+</header>
